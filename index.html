@@ -4,93 +4,102 @@
   <meta charset="UTF-8">
   <title>Accordion</title>
   <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
+  <script src="src/js/slider.js" defer></script>
   <script src="src/js/main.js" defer></script>
 </head>
 <body>
-  <h2>Hello, accordeon!</h2>
-  <div id="accordion">
-    <div class="accordion-title">
-      <span>Header 1</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
-    </div>
-    <div class="accordion-title">
-      <span>Header 2</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
-    </div>
-    <div class="accordion-title">
-      <span>Header 3</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
-    </div>
-    <div class="accordion-title">
-      <span>Header 4</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
-    </div>
-  </div>
-  <h2>Hello, accordeon 2!</h2>
-  <div id="accordion2">
-    <div class="accordion-title">
-      <span>Header 1</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
-    </div>
-    <div class="accordion-title">
-      <span>Header 2</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
-    </div>
-    <div class="accordion-title">
-      <span>Header 3</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
-    </div>
-    <div class="accordion-title">
-      <span>Header 4</span>
-    </div>
-    <div class="accordion-cont">
-      <p>Lorem ipsum dolor sit amet, luctus eu cum, vulputate nulla maecenas lorem dui lacus,
-        donec ut quam platea magna lobortis. A donec. Congue nulla voluptatem interdum,
-        mollis proin ac sed. Tellus curabitur sed adipiscing pede quis, vitae nec lacinia ac vel potenti urna,
-        arcu ipsum, aliquam suscipit sed ipsum eu ut semper, pulvinar donec interdum interdum.
-        Interdum maecenas nunc etiam, blandit quisque est repellat molestie pede vestibulum.</p>
+  <div class="Container">
+    <h2 class="Header">Hello, accordion!</h2>
+    <div class="Accordion" id="accordion">
+      <div class="Accordion-title">
+        <h3>Slider</h3>
+      </div>
+      <div class="Accordion-content">
+        <div class="Slider" id="slider">
+          <button class="Slider-arrow Slider-arrow--back">◄</button>
+          <div class="Gallery">
+            <ul class="Gallery-line">
+              <li class="Gallery-slide">
+                <img src="src/images/1.jpg" alt="first slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/2.jpg" alt="second slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/3.jpg" alt="third slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/4.jpg" alt="fourth slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/5.jpg" alt="fifth slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/6.jpg" alt="fifth slide">
+              </li>
+            </ul>
+          </div>
+          <button class="Slider-arrow Slider-arrow--next">►</button>
+        </div>
+      </div>
+      <div class="Accordion-title">
+        <h3>Text</h3>
+      </div>
+      <div class="Accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+          Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+          quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+      </div>
+      <div class="Accordion-title">
+        <h3>Another text</h3>
+      </div>
+      <div class="Accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+          Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+          quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+      </div>
+      <div class="Accordion-title">
+        <h3>And some text again</h3>
+      </div>
+      <div class="Accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+          Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+          quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+      </div>
+      <div class="Accordion-title">
+        <h3>One more slider</h3>
+      </div>
+      <div class="Accordion-content">
+        <div class="Slider" id="slider2">
+          <button class="Slider-arrow Slider-arrow--back">◄</button>
+          <div class="Gallery">
+            <ul class="Gallery-line">
+              <li class="Gallery-slide">
+                <img src="src/images/1.jpg" alt="first slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/2.jpg" alt="second slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/3.jpg" alt="third slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/4.jpg" alt="fourth slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/5.jpg" alt="fifth slide">
+              </li>
+              <li class="Gallery-slide">
+                <img src="src/images/6.jpg" alt="fifth slide">
+              </li>
+            </ul>
+          </div>
+          <button class="Slider-arrow Slider-arrow--next">►</button>
+        </div>
+      </div>
     </div>
   </div>
 </body>

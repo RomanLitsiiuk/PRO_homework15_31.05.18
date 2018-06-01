@@ -1,7 +1,7 @@
 var Accordion = function (rootElement, className) {
   this.rootElement = rootElement;
   this.className = className;
-  this.elementsList = rootElement.querySelectorAll('.accordion-title');
+  this.elementsList = rootElement.querySelectorAll('.Accordion-title');
   this.changeActiveClass(this.elementsList, this.className);
 };
 
@@ -13,9 +13,15 @@ Accordion.prototype.changeActiveClass = function (elementsList, activeClass) {
           element.classList.remove(activeClass);
         });
         this.classList.add(activeClass);
+      } else {
+        this.classList.remove(activeClass);
       }
     })
   });
 };
 
-var accordion1 = new Accordion(document.getElementById('accordion'), 'active');
+window.onload = function () {
+  var accordion1 = new Accordion(document.getElementById('accordion'), 'isActive');
+  var slider = new Slider(document.getElementById('slider')).render();
+  var slider2 = new Slider(document.getElementById('slider2')).render();
+};
