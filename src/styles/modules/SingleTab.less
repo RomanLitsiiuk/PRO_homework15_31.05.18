@@ -1,0 +1,52 @@
+.SingleTab {
+  width: 100%;
+  margin: 0 auto;
+
+  &-title {
+    background-color: #E5B89B;
+    color: #5A6C73;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #E7E3E4;
+    box-sizing: border-box;
+    font-weight: 100;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(229, 121, 29, 1) inset;
+      transition: box-shadow 0.2s;
+    }
+  }
+
+  &.isActive {
+    display: block;
+  }
+
+  &-content {
+    display: none;
+    border: 1px solid #E7E3E4;
+
+    & p {
+      padding: 10px;
+      color: #5A6C73;
+      font-family: 'Tangerine', cursive;
+      font-size: 28pt;
+      font-weight: 400;
+      text-align: justify;
+    }
+  }
+
+  &-title.isActive + .SingleTab-content {
+    display: block;
+  }
+}
+
+.SingleTab2 {
+  display: block;
+  width: 280px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 49px;
+}

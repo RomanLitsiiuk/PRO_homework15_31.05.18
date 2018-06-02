@@ -6,98 +6,137 @@
   <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
   <script src="src/js/slider.js" defer></script>
   <script src="src/js/main.js" defer></script>
+  <!--<script src="src/js/singleTab.js" defer></script>-->
 </head>
 <body>
   <div class="Container">
     <h2 class="Header">Hello, accordion!</h2>
     <div class="Accordion" id="accordion">
-      <div class="Accordion-title">
-        <h3>Slider</h3>
-      </div>
-      <div class="Accordion-content">
-        <div class="Slider" id="slider">
-          <button class="Slider-arrow Slider-arrow--back">◄</button>
-          <div class="Gallery">
-            <ul class="Gallery-line">
-              <li class="Gallery-slide">
-                <img src="src/images/1.jpg" alt="first slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/2.jpg" alt="second slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/3.jpg" alt="third slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/4.jpg" alt="fourth slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/5.jpg" alt="fifth slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/6.jpg" alt="fifth slide">
-              </li>
-            </ul>
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">Slider</h3>
+        <div class="SingleTab-content">
+          <div class="Slider" id="slider">
+            <button class="Slider-arrow Slider-arrow--back">◄</button>
+            <div class="Gallery">
+              <ul class="Gallery-line">
+                <li class="Gallery-slide">
+                  <img src="src/images/1.jpg" alt="first slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/2.jpg" alt="second slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/3.jpg" alt="third slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/4.jpg" alt="fourth slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/5.jpg" alt="fifth slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/6.jpg" alt="fifth slide">
+                </li>
+              </ul>
+            </div>
+            <button class="Slider-arrow Slider-arrow--next">►</button>
           </div>
-          <button class="Slider-arrow Slider-arrow--next">►</button>
         </div>
       </div>
-      <div class="Accordion-title">
-        <h3>Text</h3>
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">Text</h3>
+        <div class="SingleTab-content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+            Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+            quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
       </div>
-      <div class="Accordion-content">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
-          Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
-          quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">Another text</h3>
+        <div class="SingleTab-content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+            Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+            quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
       </div>
-      <div class="Accordion-title">
-        <h3>Another text</h3>
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">And some text again</h3>
+        <div class="SingleTab-content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+            Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+            quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
       </div>
-      <div class="Accordion-content">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
-          Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
-          quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-      </div>
-      <div class="Accordion-title">
-        <h3>And some text again</h3>
-      </div>
-      <div class="Accordion-content">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
-          Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
-          quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-      </div>
-      <div class="Accordion-title">
-        <h3>One more slider</h3>
-      </div>
-      <div class="Accordion-content">
-        <div class="Slider" id="slider2">
-          <button class="Slider-arrow Slider-arrow--back">◄</button>
-          <div class="Gallery">
-            <ul class="Gallery-line">
-              <li class="Gallery-slide">
-                <img src="src/images/1.jpg" alt="first slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/2.jpg" alt="second slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/3.jpg" alt="third slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/4.jpg" alt="fourth slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/5.jpg" alt="fifth slide">
-              </li>
-              <li class="Gallery-slide">
-                <img src="src/images/6.jpg" alt="fifth slide">
-              </li>
-            </ul>
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">One more slider</h3>
+        <div class="SingleTab-content">
+          <div class="Slider" id="slider2">
+            <button class="Slider-arrow Slider-arrow--back">◄</button>
+            <div class="Gallery">
+              <ul class="Gallery-line">
+                <li class="Gallery-slide">
+                  <img src="src/images/1.jpg" alt="first slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/2.jpg" alt="second slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/3.jpg" alt="third slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/4.jpg" alt="fourth slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/5.jpg" alt="fifth slide">
+                </li>
+                <li class="Gallery-slide">
+                  <img src="src/images/6.jpg" alt="fifth slide">
+                </li>
+              </ul>
+            </div>
+            <button class="Slider-arrow Slider-arrow--next">►</button>
           </div>
-          <button class="Slider-arrow Slider-arrow--next">►</button>
+        </div>
+      </div>
+    </div>
+    <div class="SingleTab2" id="singleTab">
+      <h3 class="SingleTab-title">Single Tab</h3>
+      <div class="SingleTab-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+          Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+          quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+      </div>
+    </div>
+    <div class="Accordion" id="accordion2">
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">Slider 2 text</h3>
+        <div class="SingleTab-content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+            Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+            quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+      </div>
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">Slider 2 text</h3>
+        <div class="SingleTab-content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+            Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+            quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+      </div>
+      <div class="SingleTab">
+        <h3 class="SingleTab-title">Slider 2 text</h3>
+        <div class="SingleTab-content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor.
+            Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus.Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa
+            quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </div>
       </div>
     </div>

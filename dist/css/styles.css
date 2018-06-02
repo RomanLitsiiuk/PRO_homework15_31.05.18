@@ -101,46 +101,11 @@ body {
 .Container {
   width: 960px;
   margin: 0 auto;
+  position: relative;
 }
 .Accordion {
-  width: 100%;
   max-width: 640px;
-  margin: 0 auto;
-}
-.Accordion-title {
-  background-color: #E5B89B;
-  color: #5A6C73;
-  text-align: center;
-  padding: 10px;
-  font-size: 18px;
-  border: 1px solid #E7E3E4;
-  box-sizing: border-box;
-}
-.Accordion-title h3 {
-  font-weight: 100;
-}
-.Accordion-title:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px #e5791d inset;
-  transition: box-shadow 0.2s;
-}
-.Accordion.isActive {
-  display: block;
-}
-.Accordion-content {
-  display: none;
-  border: 1px solid #E7E3E4;
-}
-.Accordion-content p {
-  padding: 10px;
-  color: #5A6C73;
-  font-family: 'Tangerine', cursive;
-  font-size: 28pt;
-  font-weight: 400;
-  text-align: justify;
-}
-.Accordion-title.isActive + .Accordion-content {
-  display: block;
+  padding-bottom: 40px;
 }
 .Header {
   text-align: center;
@@ -203,4 +168,49 @@ body {
   border: 1px solid #666F89;
   box-shadow: 0 0 5px 0 rgba(102, 111, 137, 0.7);
   box-sizing: border-box;
+}
+.SingleTab {
+  width: 100%;
+  margin: 0 auto;
+}
+.SingleTab-title {
+  background-color: #E5B89B;
+  color: #5A6C73;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #E7E3E4;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+.SingleTab-title:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #e5791d inset;
+  transition: box-shadow 0.2s;
+}
+.SingleTab.isActive {
+  display: block;
+}
+.SingleTab-content {
+  display: none;
+  border: 1px solid #E7E3E4;
+}
+.SingleTab-content p {
+  padding: 10px;
+  color: #5A6C73;
+  font-family: 'Tangerine', cursive;
+  font-size: 28pt;
+  font-weight: 400;
+  text-align: justify;
+}
+.SingleTab-title.isActive + .SingleTab-content {
+  display: block;
+}
+.SingleTab2 {
+  display: block;
+  width: 280px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 49px;
 }
